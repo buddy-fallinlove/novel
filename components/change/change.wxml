@@ -1,0 +1,6 @@
+<!--components/change/change.wxml-->
+<view class="item">
+	<view wx:for="{{hotWords}}" wx:key="index" class="clolr">
+		<text class="colors" style="background: {{item.color}}">{{item.title}}</text>
+	</view>
+</view>

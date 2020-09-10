@@ -1,0 +1,18 @@
+
+<view class="d-f">
+<image src="../../images/tabbar/选择.png" class="xuanzhe" bindtap="gou"></image>
+<view class="you">
+<view class="yuan" bindtap="goto">帮助</view>
+<image src="../../images/tabbar/刷新.png" class="shuaxin"></image>
+</view>
+</view>
+<view class="fs" wx:if="{{arr.length == ''}}">主人还没有收藏书籍哦，请去书城收藏吧!</view>
+<view class="pai" wx:else>
+<view wx:for="{{arr}}" wx:key="index">
+<view class="kuan"><image src="{{item.cover}}" class="app" bindtap="date" data-item="{{item}}"></image>
+<view wx:if="{{flag === 0}}"></view>
+<view class="tou" wx:else bindtap="xx" data-index="{{index}}">x</view>
+</view>
+<view class="zi">{{item.title}}</view>
+</view>
+</view>

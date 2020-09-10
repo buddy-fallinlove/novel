@@ -1,0 +1,9 @@
+<!--components/home/schoolboy.wxml-->
+<!-- 分类循环出来的男生数据 -->
+<view class="mans">{{man}}</view>
+<view class="pai">
+<view wx:for="{{male}}" wx:key="index" class="pan" bindtap="xuanhuan" data-item="{{item}}" data-index="{{index}}" data-six="male">
+<view>{{item.name}}</view>
+<view class="color">{{item.bookCount}}本</view>
+</view>
+</view>

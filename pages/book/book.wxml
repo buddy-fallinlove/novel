@@ -1,0 +1,30 @@
+<!-- 书城  分类  排行 -->
+<view class="kuan">
+<view class="{{index === 0 ? 'border': ''}}" bindtap="fenlei">分类</view>
+<view class="{{index === 1 ? 'border': ''}}" bindtap="paihang">排行</view>
+</view>
+<!-- 插值表达式传值 -->
+<view wx:if="{{index===0}}">
+<schoolboy male="{{male}}" man="{{man}}"></schoolboy>
+<girlstudent female="{{female}}" girl="{{girl}}"></girlstudent>
+<publishs press="{{press}}" publish="{{publish}}"></publishs>
+</view>
+<!-- 排行数据 -->
+<view wx:else>
+<!-- 男生排行 -->
+<view class="boy">男生</view>
+<view wx:for="{{male1}}" wx:key="index" data-item="{{item}}" bindtap="boy">
+<view class="help">
+<image src="{{item.cover}}" class="da"></image>
+<view class="xiao">{{item.title}}</view>
+</view>
+</view>
+<!-- 女生排行 -->
+<view class="girl">女生</view>
+<view wx:for="{{female1}}" wx:key="index" data-item="{{item}}" bindtap="boy">
+<view class="help">
+<image src="{{item.cover}}" class="da"></image>
+<view class="xiao">{{item.title}}</view>
+</view>
+</view>
+</view>

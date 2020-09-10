@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/bookshelf/bookshelf",
+    "pages/help/help",
+    "pages/book/book",
+    "pages/fantasy/fantasy",
+    "pages/details/details",
+    "pages/read/read",
+    "pages/comments/comments",
+    "pages/search/search",
+    "pages/index/index"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#cb1c37",
+    "navigationBarTitleText": "小爱小说",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color": "#ccc",
+    "selectedColor":"#cb1c37",
+    "list":[{
+      "pagePath": "pages/bookshelf/bookshelf",
+      "text": "书架",
+      "iconPath":"images/tabbar/home.png",
+      "selectedIconPath":"images/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书城",
+        "iconPath":"images/tabbar/book.png",
+        "selectedIconPath":"images/tabbar/book-active.png"
+        },
+        {
+          "pagePath": "pages/search/search",
+          "text": "搜索",
+          "iconPath":"images/tabbar/search.png",
+          "selectedIconPath":"images/tabbar/search-active.png"
+          }
+    ]
+  },
+
+ 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

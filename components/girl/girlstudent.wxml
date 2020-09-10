@@ -1,0 +1,9 @@
+<!--components/girl/girlstudent.wxml-->
+<!-- 分类循环出来的女生数据 -->
+<view class="mans">{{girl}}</view>
+<view class="pai">
+<view wx:for="{{female}}" wx:key="index" class="pan" bindtap="xuanhuan" data-item="{{item}}" data-index="{{index}}" data-six="female">
+<view>{{item.name}}</view>
+<view class="color">{{item.bookCount}}本</view>
+</view>
+</view>

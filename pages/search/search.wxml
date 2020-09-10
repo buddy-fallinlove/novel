@@ -1,0 +1,51 @@
+<!--pages/search/search.wxml-->
+<!-- 搜索页面 -->
+<view class="inputs">
+	<image src="../../images/tabbar/搜索 (2).png" class="shou"></image>
+	<input type="text" placeholder="输入书名或作者名" class="input" value="{{value}}" bindconfirm="search" bindinput="onsearch"></input>
+</view>
+<view wx:if="{{flag === 0}}">
+	<view class="d-f j-c-s-b">
+		<view class="you">大家都在搜</view>
+		<view class="d-f" bindtap="gethotWord">
+			<image src="../../images/tabbar/刷新 (1).png" class="shuaxin"></image>
+			<view class="color">换一换</view>
+		</view>
+	</view>
+	<view class="wan">
+	<view wx:for="{{hotWords}}" wx:key="index">
+	<view class="color1" style="background:{{item.color}}" data-id="{{item.title.book}}" bindtap="details">{{item.title.word}}</view>
+	</view>
+	</view>
+
+	<view class="d-f j-c-s-b">
+		<view class="mt">搜索历史</view>
+		<view class="d-f" bindtap="qingkong">
+			<image src="../../images/tabbar/清空.png" class="gao"></image>
+			<view class="hong">清空</view>
+		</view>
+	</view>
+	<!-- 历史记录 -->
+	<view class="lishi">
+	<view wx:for="{{list}}" wx:key="index">
+	<view class="ppt" bindtap="shoushuo" data-item="{{item}}">{{item}}</view>
+	</view>
+	</view>	
+</view>
+<!-- 搜索出来的数据页面 -->
+<view wx:if="{{flag === 1}}">
+	<view class="da">
+		<view wx:for="{{books}}" wx:key="index" class="xian" bindtap="xiangqing" data-item="{{item}}">
+			<view class="all">
+				<image src="{{item.cover}}" class="tupian"></image>
+			</view>
+			<view class="shu">
+				<view class="fw">{{item.title}}</view>
+				<view class="xia">{{item.author}}</view>
+				<view class="xiao">{{item.shortIntro}}</view>
+				<view class="hou">最近收藏:{{item.latelyFollower}}</view>
+			</view>
+
+		</view>
+	</view>
+</view>

@@ -1,0 +1,25 @@
+/* pages/help/help.wxss */
+
+.help{
+  font-size: 40rpx;
+  font-weight: 700;
+  margin-top: 10rpx;
+}
+.help1{
+  font-size: 34rpx;
+  margin-top: 20rpx;
+}
+.help2{
+  width: 100%;
+  border: 1rpx solid #eee;
+  margin-top: 20rpx;
+}
+.help3{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #666;
+}
+.help4{
+  font-size: 34rpx;
+  margin-top: 20rpx;
+}

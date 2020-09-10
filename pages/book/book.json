@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "schoolboy":"../../components/boy/schoolboy",
+    "girlstudent":"../../components/girl/girlstudent",
+    "publishs":"../../components/publish/publishs"
+  },
+  "navigationBarTitleText": "书城"
+}

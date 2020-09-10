@@ -1,0 +1,167 @@
+/* pages/details/details.wxss */
+.box {
+  height: 150rpx;
+  background: rgb(203,28,55);
+}
+.map {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -140rpx;
+}
+.tupian {
+  width: 250rpx;
+  height: 330rpx;
+}
+.map1 {
+  font-weight: 800;
+  margin-top: 10rpx;
+}
+.map2 {
+  margin-top: 10rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.box1 {
+  height: 200rpx;
+  background: whitesmoke;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.box2 {
+  width: 230rpx;
+  height: 70rpx;
+  border: 1rpx solid #ccc;
+  color: white;
+  background: rgb(203,28,55);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60rpx;
+}
+.box3 {
+  width: 230rpx;
+  height: 70rpx;
+  border: 1rpx solid #ccc;
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60rpx;
+}
+.five {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.five2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.five4 {
+  font-size: 26rpx;
+  margin-top: -20rpx;
+}
+.five3 {
+  color: rgb(74,225,215);
+  margin-left: 20rpx;
+}
+.beijing {
+  height: 700rpx;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 680rpx;
+  height: 700rpx;
+  background: white;
+}
+.bttn {
+  height: 80rpx;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.border {
+  border-bottom: 4rpx solid red;
+  line-height: 80rpx;
+  text-align: center;
+  color: red;
+}
+.fs {
+  color: #999;
+  font-size: 34rpx;
+  margin-top: 20rpx;
+}
+.she {
+  width: 600rpx;
+  height: 70rpx;
+  background: whitesmoke;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+.tu {
+  width: 60rpx;
+  height: 60rpx;
+}
+.xiao {
+  font-size: 34rpx;
+  margin-top: 30rpx;
+}
+.da {
+  width: 50rpx;
+  height: 50rpx;
+}
+.yanse {
+  color: rgb(244,116,113);
+}
+.app {
+  width: 200rpx;
+  height: 280rpx;
+}
+.pai {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+.mt {
+  width: 200rpx;
+}
+.jun {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-top: 50rpx;
+}
+.tp {
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+}
+.shu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+  margin-top: 30rpx;
+}
+.hong {
+  color: rgb(244,116,113);
+}
+.hui {
+  color: #999;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}

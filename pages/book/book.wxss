@@ -1,0 +1,33 @@
+.kuan {
+  height: 80rpx;
+  background: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.border {
+  border-bottom: 4rpx solid red;
+  line-height: 80rpx;
+  text-align: center;
+  color: red;
+}
+.boy {
+  padding: 30rpx;
+  color: #999;
+}
+.help {
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+}
+.da {
+  width: 70rpx;
+  height: 70rpx;
+  padding: 20rpx;
+}
+.xiao {
+  padding: 28rpx;
+}
+.girl {
+  padding: 30rpx;
+  color: #999;
+}

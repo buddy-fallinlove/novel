@@ -1,0 +1,69 @@
+.xuanzhe {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+}
+.yuan {
+  width: 120rpx;
+  height: 70rpx;
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.shuaxin {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+.you {
+  display: flex;
+  position: absolute;
+  right: 30rpx;
+  margin-top: 50rpx;
+}
+.fs {
+  font-size: 32rpx;
+  margin-top: 100rpx;
+  margin-left: 80rpx;
+}
+
+.app {
+  width: 200rpx;
+  height: 280rpx;
+}
+.zi {
+    width: 200rpx;
+    margin-left: 30rpx;
+}
+.pai {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  padding: 0 0 10rpx 20rpx;
+}
+.kuan {
+  width: 200rpx;
+  height: 280rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+.tou {
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  color: #999;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

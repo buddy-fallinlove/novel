@@ -1,0 +1,63 @@
+<!--pages/details/details.wxml-->
+<!-- 分类跳转详情 -->
+<view class="box"></view>
+<view class="map">
+	<image src="{{cover}}" class="tupian"></image>
+	<view class="map1">{{obj.title}}</view>
+	<view class="map2">{{obj.author}}</view>
+</view>
+<view class="box1">
+	<view class="five">
+		<view class="box2" bindtap="yuedu" data-item="{{item}}">开始阅读</view>
+		<view class="box3" bindtap="shujia" wx:if="{{fleg === 0}}">加入书架</view>
+		<view class="box3" wx:if='{{fleg !== 0}}'>已加入书架</view>
+	</view>
+	<view class="five2">
+		<van-rate value="{{value/2}}" bind:change="onChange" />
+	</view>
+	<view class="d-f j-c-c a-i-c five4">
+		<view>更新至</view>
+		<view class="five3">{{obj.lastChapter}}</view>
+	</view>
+</view>
+<view class="beijing">
+	<view class="btn">
+		<view class="bttn">
+			<view bindtap="xiangqing" class="{{index === 0 ? 'border': ''}}">详情</view>
+			<view bindtap="pingjia" class="{{index === 1 ? 'border': ''}}">评价({{obj.rating.count}})</view>
+		</view>
+		<view wx:if="{{index === 0}}">
+			<view class="fs">简介: {{obj.longIntro}}</view>
+			<view class="she">
+				<image src="../../images/tabbar/目录.png" class="tu"></image>
+				<view>总目录({{obj.chaptersCount}})章</view>
+			</view>
+			<view class="d-f j-c-s-b xiao">
+				<view>看过这本书的人还在看</view>
+				<view class="d-f" bindtap="shuaxin">
+					<image src="../../images/tabbar/刷新 (1).png" class="da"></image>
+					<view class="yanse">换一换</view>
+				</view>
+			</view>
+			<view class="pai">
+				<view wx:for="{{books}}" wx:key="index" bindtap="tiao" data-item="{{item}}">
+					<view class="app">
+						<image src="{{item.cover}}" class="app"></image>
+					</view>
+					<view class="mt">{{item.title}}</view>
+				</view>
+			</view>
+		</view>
+		<view wx:else>
+			<view wx:for="{{docs}}" wx:key="index">
+				<view class="tp">
+					<image src="{{item.author.avatar}}" class="jun"></image>
+					<view class="shu">
+						<view class="hong">{{item.author.nickname}}</view>
+						<view class="hui">{{item.content}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

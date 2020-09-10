@@ -1,0 +1,54 @@
+/* pages/comments/comments.wxss */
+.kuan {
+  height: 80rpx;
+  background: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.border {
+  border-bottom: 4rpx solid red;
+  line-height: 80rpx;
+  text-align: center;
+  color: red;
+}
+.tupian {
+  width: 100%;
+  height: 270rpx;
+}
+.xian  {
+  width: 100%;
+   border-bottom: 1rpx solid #eee;
+   display: flex;
+   padding: 30rpx;
+}
+.all {
+  width: 30%;
+  height: 270rpx;
+}
+.shu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 24rpx;
+  color: rgb(171, 171, 171);
+  padding: 20rpx;
+}
+.fw {
+  font-weight: 700;
+  font-size: 32rpx;
+  color: #000;
+}
+.xia {
+  margin-top: 15rpx;
+}
+.xiao {
+  font-size: 28rpx;
+  color: #999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 15rpx;
+}

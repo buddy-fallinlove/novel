@@ -1,0 +1,29 @@
+<!--pages/fantasy/fantasy.wxml-->
+<!-- 玄幻页的循环数据 -->
+<!-- 大分类 -->
+<view class="title">
+	<view wx:for='{{typeList}}' wx:key='index' data-index='{{index}}' data-item='{{item}}' class="mar {{name === index?'name':''}}" bindtap="add">{{item.name}}</view>
+</view>
+<!-- 小分类 -->
+<view class="titleB">
+	<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+		<view wx:for='{{male}}' wx:key='index' class="titleT" wx:if="{{item.mins.length > 1}}">
+			<view wx:for='{{item.mins}}' wx:key='index' wx:for-item='item1' data-index='{{index}}' data-item='{{item1}}' class="titleF {{namet === index?'name':''}}" bindtap="abb">{{item1}}</view>
+		</view>
+	</scroll-view>
+</view>
+<!-- 书籍列表 -->
+<view wx:for='{{bookList}}' wx:key='index' class="wordAll" data-item='{{item}}' bindtap="getto">
+	<view class="imgAll">
+		<image src="{{item.cover}}" class="img"></image>
+	</view>
+	<view class="word">
+		<view class="titleA">{{item.title}}</view>
+		<view class="author">{{item.author}}</view>
+		<view class="shortIntro">{{item.shortIntro}}</view>
+		<view class="tagsAll">
+			<view wx:for="{{item.tags}}" wx:key="index" 
+			class="{{index === 0 ?'tags0':''}}&&{{index === 1 ?'tags1':''}}&&{{index === 2 ?'tags2':''}}">{{item}}</view>
+		</view>
+	</view>
+</view>

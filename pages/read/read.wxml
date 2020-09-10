@@ -1,0 +1,4 @@
+<!--pages/read/read.wxml-->
+<import src="../../lib/wxParse/wxParse.wxml"/>
+
+<view>{{obj}}</view>

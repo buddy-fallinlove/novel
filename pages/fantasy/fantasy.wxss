@@ -1,0 +1,97 @@
+/* pages/fantasy/fantasy.wxss */
+.title{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100rpx;
+  padding-left: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.titleB{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100rpx;
+  padding-left: 10rpx;
+}
+.mar{
+  width: 100rpx;
+}
+.name{
+  color: red;
+}
+.titleT{
+  display: flex;
+  width: auto;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.titleF{
+  width: 120rpx;
+  text-align: center;
+  /* width: auto; */
+  margin-right: 30rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.bookList{
+  height: 100rpx;
+}
+.img{
+  width: 100%;
+  height: 280rpx;
+}
+.imgAll{
+  width: 30%;
+  height: 300rpx;
+}
+.word{
+  margin-left: 20rpx;
+  width: 100%;
+  font-size: 24rpx;
+  color: rgb(171, 171, 171);
+  padding-right: 40rpx;
+}
+.wordAll{
+  display: flex;
+  padding: 20rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+}
+.titleA{
+  font-size: 30rpx;
+  color: #000;
+}
+.author{
+  margin: 20rpx 0 20rpx 0;
+}
+.shortIntro{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.tags1{
+  color: white;
+  margin-right: 20rpx;
+  background: #00CED1;
+  padding: 0 10rpx 0 10rpx;
+}
+.tags0{
+  color: white;
+  margin-right: 20rpx;
+  background:  #FF8C00;
+  padding: 0 10rpx 0 10rpx;
+}
+.tags2{
+  color: white;
+  margin-right: 20rpx;
+  background:  #FF4500;
+  padding: 0 10rpx 0 10rpx;
+}
+.tagsAll{
+  margin-top: 30rpx;
+  display: flex;
+}

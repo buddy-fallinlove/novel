@@ -1,0 +1,31 @@
+<!--pages/comments/comments.wxml-->
+<!-- 排行 周丶月丶总榜 跳转详情 -->
+<view class="da" wx:if="{{monthRank !== 'undefined'}}">
+	<view class="kuan">
+		<view class="{{index === 0 ? 'border': ''}}" bindtap="zhou">周榜</view>
+		<view class="{{index === 1 ? 'border': ''}}" bindtap="yue">月榜</view>
+		<view class="{{index === 2 ? 'border': ''}}" bindtap="zong">总榜</view>
+	</view>
+	<view wx:for="{{books}}" wx:key="index" class="xian" bindtap="xiangqing" data-item="{{item}}">
+		<view class="all">
+			<image src="{{item.cover}}" class="tupian"></image>
+		</view>
+		<view class="shu">
+			<view class="fw">{{item.title}}</view>
+			<view class="xia">{{item.author}}</view>
+			<view class="xiao">{{item.shortIntro}}</view>
+		</view>
+	</view>
+</view>
+<view wx:else>
+	<view wx:for="{{books}}" wx:key="index" class="xian" bindtap="xiangqing" data-item="{{item}}">
+		<view class="all">
+			<image src="{{item.cover}}" class="tupian"></image>
+		</view>
+		<view class="shu">
+			<view class="fw">{{item.title}}</view>
+			<view class="xia">{{item.author}}</view>
+			<view class="xiao">{{item.shortIntro}}</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,9 @@
+<!--components/publish/publishs.wxml-->
+<!-- 分类循环出来的出版数据 -->
+<view class="mans">{{publish}}</view>
+<view class="pai">
+<view wx:for="{{press}}" wx:key="index" class="pan" bindtap="xuanhuan" data-item="{{item}}" data-index="{{index}}" data-six="press">
+<view>{{item.name}}</view>
+<view class="color">{{item.bookCount}}本</view>
+</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "change":"../../components/change/change"
+  },
+  "navigationBarTitleText": "搜索"
+}
